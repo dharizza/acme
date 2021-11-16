@@ -1,0 +1,48 @@
+uuid: a666f454-27c5-48bb-bb92-dbd5b069c9d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_background.field_lead
+    - field.field.paragraph.text_with_background.field_text
+    - field.field.paragraph.text_with_background.field_text_alignment
+    - field.field.paragraph.text_with_background.field_title_text
+    - paragraphs.paragraphs_type.text_with_background
+  module:
+    - options
+id: paragraph.text_with_background.default
+targetEntityType: paragraph
+bundle: text_with_background
+mode: default
+content:
+  field_lead:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_text:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_text_alignment:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_title_text:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

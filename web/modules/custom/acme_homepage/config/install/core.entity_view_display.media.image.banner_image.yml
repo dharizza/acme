@@ -1,0 +1,30 @@
+uuid: fcb3c2ec-14aa-4406-9d3d-d96bfa6c3692
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.banner_image
+    - field.field.media.image.field_media_image
+    - image.style.banner
+    - media.type.image
+  module:
+    - image
+id: media.image.banner_image
+targetEntityType: media
+bundle: image
+mode: banner_image
+content:
+  field_media_image:
+    label: visually_hidden
+    settings:
+      image_style: banner
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

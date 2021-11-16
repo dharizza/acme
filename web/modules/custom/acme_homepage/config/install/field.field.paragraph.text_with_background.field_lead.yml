@@ -1,0 +1,19 @@
+uuid: 8fc01679-1b0c-4493-940c-14f501371867
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_lead
+    - paragraphs.paragraphs_type.text_with_background
+id: paragraph.text_with_background.field_lead
+field_name: field_lead
+entity_type: paragraph
+bundle: text_with_background
+label: Lead
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

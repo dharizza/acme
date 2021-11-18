@@ -1,0 +1,21 @@
+uuid: dee866ff-094a-4739-91d9-8ba47fb502ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.banner
+_core:
+  default_config_hash: glVeHkB4L9XDF9zrBHc2ZY8bGkQzyxRH1_WU5DDtLvo
+id: paragraph.banner.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: banner
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

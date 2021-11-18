@@ -1,0 +1,21 @@
+uuid: 32a5977d-89f7-4ce8-aaa0-b4bb4b1f4ae4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_text
+    - paragraphs.paragraphs_type.text_with_background
+_core:
+  default_config_hash: vNawS3mFRnsRQVe-62QX_r1Le-3VfZc_sdFYwYpu1WQ
+id: paragraph.text_with_background.field_title_text
+field_name: field_title_text
+entity_type: paragraph
+bundle: text_with_background
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: 88561baa-8082-4ca8-8b97-ec91dc7ed56c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_alignment
+    - paragraphs.paragraphs_type.text_with_background
+  module:
+    - options
+_core:
+  default_config_hash: CxJKev2lh9yKrNbOMcQnEXfMe9NpY7k8cEYfBeondXA
+id: paragraph.text_with_background.field_text_alignment
+field_name: field_text_alignment
+entity_type: paragraph
+bundle: text_with_background
+label: 'Text alignment'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

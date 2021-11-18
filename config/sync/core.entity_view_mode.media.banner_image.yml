@@ -1,0 +1,12 @@
+uuid: aef66cf0-bc3b-45ec-9981-e58f2f750d4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: F9i3Unn11NTqC77dWZ9rd9wXsIB85A5PB00IUmVGezg
+id: media.banner_image
+label: 'Banner image'
+targetEntityType: media
+cache: true

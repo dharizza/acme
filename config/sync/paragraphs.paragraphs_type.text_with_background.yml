@@ -1,0 +1,12 @@
+uuid: ed2b5cc1-6630-4a5a-ad43-e20726acbd69
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zrj6j4ux6NcnT0ZeQv9PmSIW_5k0PR96Nc5rz7fgT2w
+id: text_with_background
+label: 'Text with background'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,32 @@
+uuid: b4e931d1-b8ca-4ebe-bb98-8ba180f55730
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.page
+  module:
+    - entity_reference_revisions
+id: node.page.field_components
+field_name: field_components
+entity_type: node
+bundle: page
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      banner:
+        weight: 3
+        enabled: false
+      text_with_background:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,12 @@
+uuid: a0af9c1b-3b65-4a7f-bf9a-376367f0552d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: a_R0oNcr0Lc9q3Bpq15cpE3Dh4vEWMmfC812gQiX5hU
+id: banner
+label: Banner
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

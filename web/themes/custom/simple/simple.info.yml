@@ -1,0 +1,20 @@
+name: Simple
+type: theme
+description: A simple theme that implements a very basic design.
+core_version_requirement: ^9
+base theme: classy
+
+libraries:
+  - simple/global-styling
+  - simple/font-awesome
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  footer: 'Footer'
+  pre_footer: 'Pre Footer'

@@ -1,0 +1,135 @@
+.node--type-article .profile img {
+  border-radius: 50%;
+}
+
+header .site-logo img {
+  height: 80px;
+}
+
+header .menu-item {
+  padding-top: 0;
+}
+
+header .navbar-nav .nav-item {
+  font-size: 12px;
+  padding: 23px 0;
+  text-align: center;
+  position: relative;
+}
+
+header .navbar-nav .nav-item a {
+  text-transform: uppercase;
+  color: #505D68;
+}
+
+header .navbar-nav .nav-item a:after {
+  background-color: #07977D;
+  content: '';
+  display: block;
+  height: 6px;
+  position: absolute;
+  bottom: 18px;
+  transition: width 0.3s;
+  width: 0;
+}
+
+header .navbar-nav .nav-item a:hover, header .navbar-nav .nav-item a.active {
+  color: #07977D;
+  background-color: transparent;
+}
+
+header .navbar-nav .nav-item a:hover:after, header .navbar-nav .nav-item a.active:after {
+  width: calc(100% - 15px);
+}
+
+header .navbar-nav .nav-item.user-menu-item {
+  background: #07977D;
+  display: flex;
+  color: white;
+  min-width: 100px;
+  justify-content: center;
+}
+
+header .navbar-nav .nav-item.user-menu-item i {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar-nav .nav-item.user-menu-item a.nav-link {
+  color: white;
+  margin-right: 5px;
+}
+
+header .navbar-nav .nav-item.user-menu-item a.nav-link:after {
+  display: none;
+}
+
+.paragraph--type--banner {
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.paragraph--type--banner .banner__text {
+  text-align: left;
+  padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .paragraph--type--banner .banner__text {
+    width: 70%;
+  }
+}
+
+.paragraph--type--banner.left {
+  text-align: left;
+}
+
+.paragraph--type--banner.center {
+  text-align: center;
+}
+
+.paragraph--type--banner.right {
+  text-align: right;
+}
+
+.paragraph--type--banner .field--name-field-title {
+  font-size: 60px;
+  color: white;
+  line-height: 75px;
+  margin-bottom: 20px;
+}
+
+.paragraph--type--banner .field--name-field-cta {
+  background-color: #07977D;
+  padding: 15px 25px;
+  text-align: center;
+  display: inline-block;
+}
+
+.paragraph--type--banner a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.block-page-title-block {
+  background: #07977D;
+  padding: 50px;
+  margin-bottom: 30px;
+  border-bottom-right-radius: 100px;
+  color: white;
+}
+
+.block-page-title-block h1 {
+  font-size: 60px;
+}
+
+.block-page-title-block small {
+  font-size: 12px;
+}
+
+body {
+  background-color: #FAFAFA;
+}

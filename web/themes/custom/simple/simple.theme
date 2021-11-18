@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ *
+ * Theme functions for Simple.
+ */
+
+/**
+ * Preprocess function for page_title.
+ */
+function simple_preprocess_page_title(&$variables) {
+  // Preprocess logic.
+  // ksm($variables);
+  // $current_route = \Drupal::routeMatch();
+  // $node = $current_route->getParameter('node');
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    // $variables['pretitle'] = $node->getType();
+    if ($node->getType() == 'article') {
+      $variables['pretitle'] = 'ARTICLES';
+    }
+  }
+}

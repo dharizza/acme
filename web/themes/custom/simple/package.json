@@ -1,0 +1,14 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "watch": "node-sass --watch src/sass -o css --output-style expanded",
+    "build": "node-sass src/sass -o css --output-style compressed"
+  },
+  "author": "Dharizza",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

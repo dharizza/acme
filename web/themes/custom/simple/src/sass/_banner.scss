@@ -1,0 +1,48 @@
+@import 'variables';
+
+.paragraph--type--banner {
+  height: 600px;
+  display: flex;
+  align-items: center;
+
+  .banner__text {
+    text-align: left;
+    padding-top: 30px;
+
+    @media (min-width: 768px) {
+      width: 70%;
+    }
+  }
+
+  &.left {
+    text-align: left;
+  }
+  &.center {
+    text-align: center;
+  }
+  &.right {
+    text-align: right;
+  }
+
+  .field--name-field-title {
+    font-size: 60px;
+    color: white;
+    line-height: 75px;
+    margin-bottom: 20px;
+  }
+
+  .field--name-field-cta {
+    background-color: $primary-color;
+    padding: 15px 25px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+
+}

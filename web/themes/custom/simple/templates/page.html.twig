@@ -43,6 +43,7 @@
 #}
 <div class="layout-container">
 
+  {% block header %}
   <header role="banner">
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
       {{ page.header }}
@@ -55,28 +56,39 @@
       </div>
     </nav>
   </header>
+  {% endblock %}
 
+  {% block help %}
   {{ page.breadcrumb }}
 
   {{ page.highlighted }}
 
   {{ page.help }}
+  {% endblock %}
 
+  {% block content %}
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
     {{ page.content }}
   </main>
+  {% endblock %}
 
+  {% block prefooter %}
   {% if page.pre_footer %}
     <section class="prefooter">
       {{ page.pre_footer }}
     </section>
   {% endif %}
+  {% endblock %}
 
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
+  {% block footer %}
+    {% if page.footer %}
+      <footer role="contentinfo">
+        {{ page.footer }}
+      </footer>
+    {% endif %}
+    {% block legal %}
+    {% endblock %}
+  {% endblock %}
 
 </div>{# /.layout-container #}

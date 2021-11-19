@@ -87,11 +87,10 @@
     <div class="node__sidebar col-md-3 p-5 pt-0">
       {{ author_picture }}
       <div{{ author_attributes.addClass('node__submitted') }}>
-        {% set timestamp = node.getCreatedTime() %}
         {% set formatted_date = timestamp|date('F j, Y') %}
 
         <p>BY</p>
-        <p>{{ author_name }}</p>
+        <p>{{ author }}</p>
         <p>{{ formatted_date }}</p>
 
         {{ metadata }}

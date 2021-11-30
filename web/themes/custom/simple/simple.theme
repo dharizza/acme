@@ -49,3 +49,14 @@ function simple_theme_suggestions_page_alter(array &$suggestions, array $variabl
 function simple_theme_suggestions_user_alter(array &$suggestions, array $variables) {
   $suggestions[] = 'user__' . $variables['elements']['#user']->uid->value;
 }
+
+function simple_preprocess_block(&$variables) {
+  if (isset($variables['content']['#block_content'])) {
+    $block = $variables['content']['#block_content'];
+    if ($block->bundle() === 'dark_mode_button') {
+      $variables['switch_to_dark_text'] = $block->field_switch_dark->value;
+      $variables['#attached']['drupalSettings']['simple']['dark_mode']['switch_to_dark'] = $block->field_switch_dark->value;
+      $variables['#attached']['drupalSettings']['simple']['dark_mode']['switch_to_light'] = $block->field_switch_light->value;
+    }
+  }
+}

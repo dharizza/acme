@@ -56,7 +56,11 @@
   <div{{ attributes.setAttribute("style", "background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(" ~ image ~ ");") }}>
     <div class="banner__text">
       {{ content.field_title }}
-      {{ content.field_cta }}
+      {% include "@simple/includes/btn-link.html.twig" with {
+        uri: paragraph.field_cta.0.value.uri,
+        user_class: paragraph.field_cta_style.0.value,
+        text: paragraph.field_cta.0.value.title
+      } %}
     </div>
   </div>
 {% endblock paragraph %}

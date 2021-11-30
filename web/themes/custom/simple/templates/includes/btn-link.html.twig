@@ -1,0 +1,6 @@
+{# <a href="{{ url }}" class="btn {{ class }}">{{ text }}</a> #}
+{% set classes = [
+  'btn',
+  'btn-lg',
+] %}
+{{ link(text, uri, { 'class': classes | merge([user_class]) } ) }}

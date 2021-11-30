@@ -20,3 +20,14 @@ font-awesome:
     theme:
       https://use.fontawesome.com/releases/v5.15.3/css/all.css:
         type: external
+
+dark-mode:
+  css:
+    theme:
+      css/dark_mode.css: {}
+  js:
+    js/dark-mode.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once

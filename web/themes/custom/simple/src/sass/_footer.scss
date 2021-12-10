@@ -1,0 +1,31 @@
+@import 'variables';
+
+.prefooter {
+  background-color: $primary-color;
+}
+
+footer {
+  background-color: $dark-background;
+  color: white;
+
+  .footer-container {
+    text-align: center;
+
+    i {
+      color: $primary-color;
+    }
+
+    @media (min-width: 910px) {
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .block-system-branding-block img {
+      width: 160px;
+    }
+    .logo {
+      width: 205px;
+    }
+  }
+}

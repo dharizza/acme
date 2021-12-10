@@ -1,3 +1,7 @@
+.region-primary-menu {
+  display: flex;
+}
+
 .node--type-article .profile img {
   border-radius: 50%;
 }
@@ -128,6 +132,39 @@ header .navbar-nav .nav-item.user-menu-item a.nav-link:after {
 
 .block-page-title-block small {
   font-size: 12px;
+}
+
+.prefooter {
+  background-color: #07977D;
+}
+
+footer {
+  background-color: #191919;
+  color: white;
+}
+
+footer .footer-container {
+  text-align: center;
+}
+
+footer .footer-container i {
+  color: #07977D;
+}
+
+@media (min-width: 910px) {
+  footer .footer-container {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+footer .footer-container .block-system-branding-block img {
+  width: 160px;
+}
+
+footer .footer-container .logo {
+  width: 205px;
 }
 
 body {

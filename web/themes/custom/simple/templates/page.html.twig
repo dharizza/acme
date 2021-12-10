@@ -62,7 +62,7 @@
 
   {% block prefooter %}
   {% if page.pre_footer %}
-    <section class="prefooter">
+    <section class="prefooter py-3 px-5">
       {{ page.pre_footer }}
     </section>
   {% endif %}
@@ -70,22 +70,24 @@
 
   {% block footer %}
     {% if page.footer %}
-      <footer role="contentinfo">
-        {{ page.footer }}
-        <div class="address">
-          <p>1456 ACME AVENUE</p>
-          <p>MONTRÉAL, QC</p>
-          <p>H2J 3J1 CANADA</p>
+      <footer role="contentinfo" class="pt-5">
+        <div class="footer-container">
+          {{ page.footer }}
+          <div class="address">
+            <p>1456 ACME AVENUE</p>
+            <p>MONTRÉAL, QC</p>
+            <p>H2J 3J1 CANADA</p>
+          </div>
+          <div class="contact-info">
+            <p><i class="fas fa-phone-alt me-2"></i>514.123.2314</p>
+            <p><i class="fas fa-envelope me-2"></i>acme@gmail.com</p>
+          </div>
+          <img class="logo" src="{{ base_path ~ directory }}/images/logo-trees.png">
         </div>
-        <div class="contact-info">
-          <p><i class="fas fa-phone-alt"></i>514.123.2314</p>
-          <p><i class="fas fa-envelope"></i>acme@gmail.com</p>
-        </div>
-        <img src="{{ base_path ~ directory }}/images/logo-trees.png">
+        {% block legal %}
+        {% endblock %}
       </footer>
     {% endif %}
-    {% block legal %}
-    {% endblock %}
   {% endblock %}
 
 </div>{# /.layout-container #}

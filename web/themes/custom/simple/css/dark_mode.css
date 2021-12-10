@@ -1,3 +1,20 @@
 body.dark {
   background-color: #191919;
 }
+
+body.dark header .navbar-light.bg-light {
+  background-color: #191919 !important;
+}
+
+body.dark header .navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+body.dark header .navbar-light .navbar-nav .user-menu-item a.nav-link, body.dark header .navbar-light .navbar-nav .user-menu-item i {
+  color: #191919;
+}
+
+body.dark footer {
+  background-color: white;
+  color: #191919;
+}

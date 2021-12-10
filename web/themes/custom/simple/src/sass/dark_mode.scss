@@ -2,4 +2,26 @@
 
 body.dark {
   background-color: $dark-background;
+
+  header {
+    .navbar-light.bg-light {
+      background-color: $dark-background!important;
+    }
+    .navbar-light .navbar-nav {
+      .nav-link {
+        color: white;
+      }
+
+      .user-menu-item {
+        a.nav-link, i {
+          color: $dark-background;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: white;
+    color: $dark-background;
+  }
 }

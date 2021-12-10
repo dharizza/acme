@@ -3,4 +3,7 @@
   'btn',
   'btn-lg',
 ] %}
-{{ link(text, uri, { 'class': classes | merge([user_class]) } ) }}
+{# {{ link(text, uri, { 'class': classes | merge([user_class]) } ) }} #}
+
+{% set attr = create_attribute() %}
+<a{{ attr.addClass(classes).setAttribute('href', 'https://youtube.com').setAttribute('data', '123') }}>{{ text }}</a>

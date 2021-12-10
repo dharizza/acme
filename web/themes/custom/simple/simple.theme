@@ -57,6 +57,22 @@ function simple_preprocess_block(&$variables) {
       $variables['switch_to_dark_text'] = $block->field_switch_dark->value;
       $variables['#attached']['drupalSettings']['simple']['dark_mode']['switch_to_dark'] = $block->field_switch_dark->value;
       $variables['#attached']['drupalSettings']['simple']['dark_mode']['switch_to_light'] = $block->field_switch_light->value;
+      $variables['#attached']['library'][] = 'simple/dark-mode';
     }
   }
+}
+
+/**
+ * Implements hook_form_system_theme_settings_alter().
+ */
+function simple_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  $form['simple_contact_info'] = array(
+    '#type' => 'details',
+    '#title' => ('Contact Information'),
+  );
+  $form['simple_contact_info']['phone'] = array(
+    '#type' => 'tel',
+    '#title' => t('Phone'),
+    '#pattern' => '[^\\d]*',
+  );
 }

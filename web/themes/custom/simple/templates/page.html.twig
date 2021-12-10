@@ -72,6 +72,16 @@
     {% if page.footer %}
       <footer role="contentinfo">
         {{ page.footer }}
+        <div class="address">
+          <p>1456 ACME AVENUE</p>
+          <p>MONTRÉAL, QC</p>
+          <p>H2J 3J1 CANADA</p>
+        </div>
+        <div class="contact-info">
+          <p><i class="fas fa-phone-alt"></i>514.123.2314</p>
+          <p><i class="fas fa-envelope"></i>acme@gmail.com</p>
+        </div>
+        <img src="{{ base_path ~ directory }}/images/logo-trees.png">
       </footer>
     {% endif %}
     {% block legal %}

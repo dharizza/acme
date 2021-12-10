@@ -1,4 +1,12 @@
-{{ attach_library('simple/dark-mode') }}
+{# {{ attach_library('simple/dark-mode') }} #}
 <ul class="navbar-nav">
-  <a class="nav-link dark-mode">{{ switch_to_dark_text }}</a>
+  {% set attributes = create_attribute() %}
+  {# <a class="nav-link dark-mode">{{ switch_to_dark_text }}</a> #}
+  {% set classes = [
+    'nav-link',
+    'dark-mode',
+  ] %}
+  {% set attributes = attributes.addClass(classes) %}
+  {# <a{{ attributes.addClass(classes) }}>{{ switch_to_dark_text }}</a> #}
+  <a{{ attributes }}>{{ switch_to_dark_text }}</a>
 </ul>

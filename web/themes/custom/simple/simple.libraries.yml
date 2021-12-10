@@ -31,3 +31,8 @@ dark-mode:
     - core/drupal
     - core/jquery
     - core/jquery.once
+
+node:
+  css:
+    state:
+      css/node.css: {}

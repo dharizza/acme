@@ -8,6 +8,29 @@ libraries:
   - simple/global-styling
   - simple/font-awesome
 
+# Replacing library
+# libraries-override:
+#   classy/node: simple/node
+
+# Replacing asset
+# libraries-override:
+#   classy/node:
+#     css:
+#       component:
+#         css/components/node.css: css/node.css
+
+# Avoid loading one file from a library
+# libraries-override:
+#   classy/node:
+#     css:
+#       component:
+#         css/components/node.css: false
+
+# Avoid loading of library
+# libraries-override:
+#   classy/node: false
+#   toolbar/toolbar.menu: false
+
 regions:
   header: 'Header'
   primary_menu: 'Primary menu'

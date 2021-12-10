@@ -9,10 +9,10 @@
           const body_element = document.querySelector('body');
           const button = document.querySelector('.dark-mode');
           if (body_element.classList.contains('dark')) {
-            button.innerHTML = 'Light';
+            button.innerHTML = drupalSettings.simple.dark_mode.switch_to_light;
           }
           else {
-            button.innerHTML = 'Dark';
+            button.innerHTML = drupalSettings.simple.dark_mode.switch_to_dark;
           }
         })
       });

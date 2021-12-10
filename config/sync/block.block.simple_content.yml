@@ -1,4 +1,4 @@
-uuid: 552fdfdd-262a-474b-8382-008f097fe680
+uuid: b9f92c49-2908-4f79-977c-adc63801553d
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - simple
 _core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+  default_config_hash: 80N66GdzEvwqi1m-_GZ-ulkk8AJG9beoXcZ4-pMVKjI
 id: simple_content
 theme: simple
 region: content
-weight: 0
+weight: -2
 provider: null
 plugin: system_main_block
 settings:

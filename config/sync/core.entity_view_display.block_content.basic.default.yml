@@ -4,9 +4,7 @@ status: true
 dependencies:
   config:
     - block_content.type.basic
-    - field.field.block_content.basic.body
-  module:
-    - text
+    - field.field.block_content.basic.field_switch_dark
 _core:
   default_config_hash: orJpHUlAc_wiQLMUjIgEJXGeiqylGHMPcmNRjGtct-M
 id: block_content.basic.default
@@ -14,11 +12,12 @@ targetEntityType: block_content
 bundle: basic
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
+  field_switch_dark:
     weight: 0
-    region: content
-    settings: {  }
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
+    type: string
+    region: content
 hidden: {  }

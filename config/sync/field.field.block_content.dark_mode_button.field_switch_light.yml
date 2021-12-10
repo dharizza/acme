@@ -1,0 +1,19 @@
+uuid: 39c1ba6d-45bd-4fe9-9846-86c6e44b51e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.dark_mode_button
+    - field.storage.block_content.field_switch_light
+id: block_content.dark_mode_button.field_switch_light
+field_name: field_switch_light
+entity_type: block_content
+bundle: dark_mode_button
+label: 'Switch to light text'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

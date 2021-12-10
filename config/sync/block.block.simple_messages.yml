@@ -1,4 +1,4 @@
-uuid: 0f95d003-74d0-40a2-9b9d-40258ae1e8f9
+uuid: 9e9915b1-8edb-4856-8340-3af96810fdfc
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - simple
 _core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+  default_config_hash: YqKTtloWJ8FjLtfVNfrHaK6kVgxT67lC1cJ3j6i6WLo
 id: simple_messages
 theme: simple
 region: highlighted

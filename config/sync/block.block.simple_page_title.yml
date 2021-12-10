@@ -1,15 +1,17 @@
-uuid: 16354af4-95c0-4903-b04c-2c5c1e20a7da
+uuid: 74c1c78d-4cdc-4f5f-860a-df59b9c3b0f6
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - simple
 _core:
-  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+  default_config_hash: Z3nlZUh2mSJP3apMrJWt-duS-aLyP79rcfu_0wpPmDs
 id: simple_page_title
 theme: simple
 region: content
-weight: -50
+weight: -7
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,8 @@ settings:
   label: 'Page title'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true

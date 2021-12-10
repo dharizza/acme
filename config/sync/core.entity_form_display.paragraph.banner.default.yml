@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.banner.field_alignment
     - field.field.paragraph.banner.field_cta
+    - field.field.paragraph.banner.field_cta_style
     - field.field.paragraph.banner.field_image
     - field.field.paragraph.banner.field_title
     - paragraphs.paragraphs_type.banner
@@ -31,6 +32,12 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
+  field_cta_style:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_image:
     type: media_library_widget

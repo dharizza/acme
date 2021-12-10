@@ -1,15 +1,15 @@
-uuid: e3534ae9-6903-4b66-9652-907de55510fc
+uuid: 41eec76d-b597-4823-88fd-6e85dfe8a470
 langcode: en
 status: true
 dependencies:
   theme:
     - simple
 _core:
-  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+  default_config_hash: ik4PTMlBD0MWansnSMpSXq5SUlWRJ1IVVt6C7AIbQmc
 id: simple_local_actions
 theme: simple
 region: content
-weight: -20
+weight: -6
 provider: null
 plugin: local_actions_block
 settings:

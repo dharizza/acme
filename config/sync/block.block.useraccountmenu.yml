@@ -1,4 +1,4 @@
-uuid: 87e062b0-2dfc-474d-808e-1a003b52f5cb
+uuid: dba6b3c2-5286-4a0b-938a-0ef7b1df8d4c
 langcode: en
 status: true
 dependencies:
@@ -8,9 +8,7 @@ dependencies:
     - system
   theme:
     - simple
-_core:
-  default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
-id: simple_account_menu
+id: useraccountmenu
 theme: simple
 region: secondary_menu
 weight: 0
@@ -22,6 +20,6 @@ settings:
   provider: system
   label_display: '0'
   level: 1
-  depth: 1
+  depth: 0
   expand_all_items: false
 visibility: {  }

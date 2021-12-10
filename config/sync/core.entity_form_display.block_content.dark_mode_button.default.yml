@@ -1,0 +1,38 @@
+uuid: 49688152-b75a-4e01-b78f-c18fc56cc330
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.dark_mode_button
+    - field.field.block_content.dark_mode_button.field_switch_dark
+    - field.field.block_content.dark_mode_button.field_switch_light
+id: block_content.dark_mode_button.default
+targetEntityType: block_content
+bundle: dark_mode_button
+mode: default
+content:
+  field_switch_dark:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_switch_light:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,45 @@
+uuid: ac1c8e87-2c45-470f-8352-947b9f1a6176
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_cta_style
+field_name: field_cta_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: btn-primary
+      label: Primary
+    -
+      value: btn-secondary
+      label: Secondary
+    -
+      value: btn-success
+      label: Success
+    -
+      value: btn-danger
+      label: Danger
+    -
+      value: btn-outline-primary
+      label: 'Primary Outlined'
+    -
+      value: btn-outline-secondary
+      label: 'Secondary Outlined'
+    -
+      value: btn-outline-success
+      label: 'Success Outlined'
+    -
+      value: btn-outline-danger
+      label: 'Danger Outlined'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

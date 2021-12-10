@@ -1,0 +1,30 @@
+uuid: 56de3c9a-a947-4cb1-b851-fd68bd620972
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.dark_mode_button
+    - field.field.block_content.dark_mode_button.field_switch_dark
+    - field.field.block_content.dark_mode_button.field_switch_light
+id: block_content.dark_mode_button.default
+targetEntityType: block_content
+bundle: dark_mode_button
+mode: default
+content:
+  field_switch_dark:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_switch_light:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

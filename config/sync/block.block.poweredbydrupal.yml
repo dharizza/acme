@@ -1,4 +1,4 @@
-uuid: 50484605-d846-45e2-a284-6330aaafd053
+uuid: 3bb3c762-82ec-404e-836a-ff608f388c7b
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: poweredbydrupal
 theme: simple
 region: pre_footer
-weight: -7
+weight: 0
 provider: null
 plugin: system_powered_by_block
 settings:

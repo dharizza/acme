@@ -1,4 +1,4 @@
-uuid: a494d085-d240-4c41-bd46-67b6983bb089
+uuid: ea239fcf-152b-47a6-8db1-149e3bfa91dd
 langcode: en
 status: true
 dependencies:
@@ -6,9 +6,7 @@ dependencies:
     - system
   theme:
     - simple
-_core:
-  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
-id: simple_branding
+id: sitebranding_2
 theme: simple
 region: header
 weight: 0

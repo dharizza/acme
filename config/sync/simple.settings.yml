@@ -1,0 +1,7 @@
+phone: 1122-3344
+email: acme@gmail.com
+address:
+  value: '<p>1456 ACME AVENUE</p><p>MONTRÉAL, QC</p><p>H2J 3J1 CANADA</p>'
+  format: basic_html
+_core:
+  default_config_hash: 9HU8d3qTsZTzV89jnhObkmYh2NJXwbyWv6KMs1YQIEM

@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.banner.field_alignment
     - field.field.paragraph.banner.field_cta
+    - field.field.paragraph.banner.field_cta_style
     - field.field.paragraph.banner.field_image
     - field.field.paragraph.banner.field_title
     - paragraphs.paragraphs_type.banner
@@ -36,6 +37,13 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_cta_style:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_image:
     type: entity_reference_entity_view

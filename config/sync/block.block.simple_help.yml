@@ -1,4 +1,4 @@
-uuid: 5b1d9cf1-9b1a-4266-a472-c0cf991a8645
+uuid: 8dff7dec-c847-4225-b511-79f1e60d74ea
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - simple
 _core:
-  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+  default_config_hash: PfozGAnWQRNy00G6KEnZjIu9b2lGuWg-j-GT_-Ejglc
 id: simple_help
 theme: simple
-region: content
-weight: -30
+region: help
+weight: -8
 provider: null
 plugin: help_block
 settings:

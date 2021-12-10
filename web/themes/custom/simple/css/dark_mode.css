@@ -1,5 +1,6 @@
 body.dark {
   background-color: #191919;
+  color: white;
 }
 
 body.dark header .navbar-light.bg-light {
@@ -16,5 +17,9 @@ body.dark header .navbar-light .navbar-nav .user-menu-item a.nav-link, body.dark
 
 body.dark footer {
   background-color: white;
+  color: #191919;
+}
+
+body.dark .block-page-title-block {
   color: #191919;
 }

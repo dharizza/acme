@@ -69,10 +69,39 @@ function simple_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormS
   $form['simple_contact_info'] = array(
     '#type' => 'details',
     '#title' => ('Contact Information'),
+    '#open' => TRUE,
   );
   $form['simple_contact_info']['phone'] = array(
     '#type' => 'tel',
-    '#title' => t('Phone'),
-    '#pattern' => '[^\\d]*',
+    '#title' => t('Phone Number'),
+    '#pattern' => '[0-9]{4}-[0-9]{4}',
+    '#description' => t('Enter the phone number using the format 1234-5678.'),
+    '#placeholder' => '1234-5678',
+    '#default_value' => theme_get_setting('phone'),
   );
+  $form['simple_contact_info']['email'] = [
+    '#type' => 'email',
+    '#title' => t('Email'),
+    '#pattern' => '^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$',
+    '#default_value' => theme_get_setting('email'),
+  ];
+  $address = theme_get_setting('address');
+  $form['simple_contact_info']['address'] = array(
+    '#type' => 'text_format',
+    '#title' => 'Address',
+    '#format' => !empty($address) ? $address['format'] : 'basic_html',
+    '#default_value' => $address['value'],
+  );
+}
+
+function simple_preprocess_page(&$variables) {
+  if ($phone = theme_get_setting('phone')) {
+    $variables['simple']['phone'] = $phone;
+  }
+  if ($email = theme_get_setting('email')) {
+    $variables['simple']['email'] = $email;
+  }
+  if ($address = theme_get_setting('address')) {
+    $variables['simple']['address'] = $address['value'];
+  }
 }

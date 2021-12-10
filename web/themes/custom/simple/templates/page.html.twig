@@ -74,14 +74,19 @@
         <div class="footer-container">
           {{ page.footer }}
           <div class="address">
-            <p>1456 ACME AVENUE</p>
-            <p>MONTRÉAL, QC</p>
-            <p>H2J 3J1 CANADA</p>
+            {% if simple.address %}
+              {{ simple.address|raw }}
+            {% endif %}
           </div>
           <div class="contact-info">
-            <p><i class="fas fa-phone-alt me-2"></i>514.123.2314</p>
-            <p><i class="fas fa-envelope me-2"></i>acme@gmail.com</p>
+            {% if simple.phone %}
+              <p><i class="fas fa-phone-alt me-2"></i>{{ simple.phone }}</p>
+            {% endif %}
+            {% if simple.email %}
+              <p><i class="fas fa-envelope me-2"></i>{{ simple.email }}</p>
+            {% endif %}
           </div>
+          {{ drupal_menu('main') }}
           <img class="logo" src="{{ base_path ~ directory }}/images/logo-trees.png">
         </div>
         {% block legal %}

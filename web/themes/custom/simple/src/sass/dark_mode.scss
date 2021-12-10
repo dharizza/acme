@@ -2,6 +2,7 @@
 
 body.dark {
   background-color: $dark-background;
+  color: white;
 
   header {
     .navbar-light.bg-light {
@@ -22,6 +23,10 @@ body.dark {
 
   footer {
     background-color: white;
+    color: $dark-background;
+  }
+
+  .block-page-title-block {
     color: $dark-background;
   }
 }
